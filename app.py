@@ -2,7 +2,7 @@ from flask import Flask, render_template,request
 from tensorflow import keras
 from tensorflow.keras.preprocessing import image
 import numpy as np
-
+from PIL import Image
 
 app = Flask(__name__)
 model = keras.models.load_model('pikachu2.h5')
